@@ -1,3 +1,4 @@
+
 % skrip, ktory sa venuje kategorizaci periodickych signalov. Su k dispozicii zrejme dva typy
 % signalov: 1) s pravidelnou periodou (dominantna zrejme jedna frekvencia) - CategoryA a 2) v signale 
 % je viacej vyznamnych period - CategoryB. Uloha je kategorizovat, o aky typ signalu sa jedna.
