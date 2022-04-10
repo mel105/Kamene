@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+    <title>Report spracovania csv súboru</title>
+</head>
+
+<body>
+    <h1>Report spracovania GNSS crd súborov</h1>
+    <p>Dáta sú poskytnuté od J.B. Hodnoty sú skreslené.</p>
+    <h2>Verzia dokumentu</h2>
+    {{version_table.to_html()}}
+    <p>Last-update <em>{{ docu_gen_time }}</em></p>
+    <h2>Zoznam tabuliek</h2>
+    {{info_table.to_html(render_links=True, escape=False)}}
+</body>
+</html>
+

@@ -1,0 +1,10 @@
+{
+    "set_inp":{
+            "inp_file_name":["TEME", "TREB", "TUBO", "TURN", "TURO"],
+            "inp_local_path":"/home/mel/Work/ME/JB/Kamene/PythonLibrary/Data"
+	},
+	"set_out":{
+        	"out_file_name": "Flt",
+        	"out_local_path":"/home/mel/Work/ME/JB/Kamene/PythonLibrary/Out"
+	}
+}

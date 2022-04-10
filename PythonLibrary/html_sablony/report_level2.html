@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="https://cdn.plot.ly/plotly-2.4.2.min.js"></script>
+    <title>Report spracovania csv súboru</title>
+</head>
+
+<body>
+    <div id="toc_container">
+        <h2>Obsah</h2>
+        <ul class="toc_list">
+            <li> <a href="#Situation"> Zobrazenie situácie</a></li>
+            <li> <a href="#Decomposition"> Rozklad časovej rady</a></li>
+            <li> <a href="#Outliers"> Odľahlé merania</a></li>
+            <li> <a href="#Stats"> Popisné štatistiky</a></li>
+        </ul>
+    </div>
+
+    <h3 id="Situation">Zobrazenie situácie</h3>
+    <p>Pozor: orignálne hodnoty sú normované o ich priemer. Napr. priebeh x-ových súradníc je redukovaný o priemer</p>
+    {{fig_xyz|safe}}
+    <h3 id="Decomposition">Rozklad časovej rady</h3>
+    <p>Pozor: Originálne rady sú prekonvertované do novej rady s mesačnou frekvenciou. Overim, že ako to presne funguje (použitá metoda asfreq). Zrejme zobrazí mesačný priemer. Nič menej pri dekompozícii som chcel demonštrovať hlavne trendovú zložku a sezónnu komponentu.</p>
+    <h4>Rozklad rady X</h4>
+    {{fig_dec_x|safe}}
+    <h4>Rozklad rady Y</h4>
+    {{fig_dec_y|safe}}
+    <h4>Rozklad rady Z</h4>
+    {{fig_dec_z|safe}}
+    <h3 id="Outliers">Odľahlé merania</h3>
+    {{fig_out|safe}}
+    <h3 id="Stats">Popisné štatistiky</h3>
+    <p>Pozor: Kapitola obsahuje len popisné štatistiky originalnych časových radov.</p>
+     {{stat.to_html(render_links=True, escape=False)}}
+</body>
+</html>
